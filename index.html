@@ -30,26 +30,74 @@
       /* Don't touch this END */
 
       /* Write CSS Here */
+      .box1 {
+        min-width: 40px;
+        min-height: 40px;
+        padding: 4px;
+        border: 2px dotted lightcoral;
+      }
 
       .three-column-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 5px;
       }
 
       .three-column-grid__expand-two {
+        display: grid;
+        grid-template-columns: 50px 1fr 50px;
+        gap: 5px;
       }
 
       .five-column-grid {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 5px;
       }
 
       .center-grid {
+        display: grid;
+        grid-template:
+        "a centered m" auto /
+        2fr 1fr 2fr;
       }
 
       .centered {
+        grid-area: centered;
       }
 
       /* Grid within Grid Section */
       /* Practice re-using classes */
-
+      .logo {
+        min-width: 40px;
+        min-height: 40px;
+        border: 2px dotted lightgreen;
+      }
       .two-column-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+      .two-column-grid > .box {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .two-column-grid > .box1 {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+      }
+      .exp {
+        display: grid;
+        grid-template-columns: 50px 1fr 170px;
+        gap: 5px
+      }
+      .exp > .and {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .two-column-grid__expand-two {
+        display: grid;
+        grid-template-columns: 120px auto;
+        gap: 5px;
       }
     </style>
   </head>
@@ -101,7 +149,7 @@
           <div class="inner-box"></div>
           <div class="inner-box"></div>
         </div>
-        <div class="box">
+        <div class="box1">
           <div class="inner-box"></div>
           <div class="inner-box"></div>
           <div class="inner-box"></div>
@@ -112,14 +160,14 @@
     </div>
     <div>
       <h2>Grid within Grid #2 (Expansion)</h2>
-      <div class="container">
+      <div class="container exp">
         <div class="box">
           <div class="inner-box"></div>
         </div>
         <div class="box expand">
           <div class="inner-box width-sm"></div>
         </div>
-        <div class="box">
+        <div class="box and">
           <div class="inner-box"></div>
           <div class="inner-box"></div>
           <div class="inner-box"></div>
