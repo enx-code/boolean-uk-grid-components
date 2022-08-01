@@ -35,31 +35,31 @@
     .two-column-grid__expand-two {
       display: grid;
       grid-template-columns: 1fr 6fr;
-      gap: 5px;
+      gap: 4px;
     }
 
     .three-column-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 5px;
+      gap: 4px;
     }
 
     .three-column-grid__expand-two {
       display: grid;
-      grid-template-columns: 50px 1fr 50px;
-      gap: 5px;
+      grid-template-columns: auto 1fr auto;
+      gap: 4px;
     }
 
     .five-column-grid {
       display: grid;
       grid-template-columns: repeat(5, 1fr);
-      gap: 5px;
+      gap: 4px;
     }
 
     .center-grid {
       display: grid;
       grid-template: "empty1 centered empty2" auto / 2fr 1fr 2fr;
-      gap: 5px;
+      gap: 4px;
     }
 
     .centered {
@@ -69,13 +69,13 @@
     .container.two-column-grid .box {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 5px;
+      gap: 4px;
     }
 
     .container.two-column-grid .box:nth-child(2) {
       display: grid;
       grid-template-columns: repeat(5, 1fr);
-      gap: 5px;
+      gap: 4px;
     }
 
     /* Grid within Grid Section */
@@ -89,20 +89,20 @@
     .two-column-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 5px;
+      gap: 4px;
     }
 
     .exp {
       display: grid;
       grid-template-columns: 1fr 10fr 3fr;
-      gap: 5px;
+      gap: 4px;
     }
 
     /* pseudo class added new thing to learn */
     .exp .box:nth-child(3) {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 5px;
+      gap: 4px;
     }
   </style>
 </head>
