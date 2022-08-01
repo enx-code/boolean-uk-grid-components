@@ -58,12 +58,12 @@
 
     .center-grid {
       display: grid;
-      grid-template-columns: 1fr;
-      justify-items: center;
+      grid-template: "empty1 centered empty2" auto / 2fr 1fr 2fr;
+      gap: 5px;
     }
 
     .centered {
-      width: 18%;
+      grid-area: centered;
     }
 
     .container.two-column-grid .box {
